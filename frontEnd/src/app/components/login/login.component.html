@@ -1,0 +1,33 @@
+<section class="joinnow">
+    <div class="login col-lg-4 m-auto shadow-lg">
+        <form [formGroup]="signinForm" (ngSubmit)="login()">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input formControlName="password" type="password" class="form-control" id="password">
+              </div> 
+              <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div> -->
+              
+              <div class="loginCSS">
+                <button type="submit" class="btn btn-primary col-lg-12">Submit</button>
+                <div className = "w-100 ">
+                  Forgot Password
+              </div>
+              <div className = "w-100  nt-4">
+                  Don't have a account? <a routerLink="/signup" >Signup</a>
+              </div>
+              </div>
+              
+              <!-- <div className = "w-100 text-center nt-2">
+                Aleardy have a account? <a routerLink="signup" >Log In</a>
+            </div> -->
+            
+        </form>
+    </div>
+  </section>
